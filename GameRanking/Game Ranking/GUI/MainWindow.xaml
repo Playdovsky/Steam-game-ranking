@@ -1,0 +1,63 @@
+﻿<Window x:Class="Game_Ranking.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Game_Ranking"
+        mc:Ignorable="d"
+        Background="#161920"
+        Title="Steam Game Ranking" Height="397" Width="753" ResizeMode="NoResize" WindowStyle="ToolWindow">
+    <Grid HorizontalAlignment="Center" Width="799" Margin="0,0,0,-6">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="193*"/>
+            <RowDefinition Height="162*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="DataGridGames" d:ItemsSource="{d:SampleData ItemCount=5}"  Margin="42,99,41,42" HeadersVisibility="Column" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" MouseDoubleClick="DataGridGames_MouseDoubleClick" Background="#20242C"  BorderBrush="#20242C" BorderThickness="5" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
+            <DataGrid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.302"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </DataGrid.RenderTransform>
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="Foreground" Value="#A3CF06"/>
+                    <Setter Property="Background" Value="#3d434d"/>
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                    <Setter Property="FontWeight" Value="Bold"/>
+                    <Setter Property="BorderThickness" Value="1"/>
+                    <Setter Property="FontSize" Value="12"/>
+                    <Setter Property="BorderBrush" Value="white"/>
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Title" Binding="{Binding Title}" IsReadOnly="True" Width="125" FontSize="12"/>
+                <DataGridTextColumn Header="All time peak" Binding="{Binding AllTimePeak}" IsReadOnly="True" Width="100" FontSize="12"/>
+                <DataGridTextColumn Header="Last month peak" Binding="{Binding Last30Peak}" IsReadOnly="True" Width="120" FontSize="12"/>
+                <DataGridTextColumn Header="Last 24h peak" Binding="{Binding Last24hPeak}" IsReadOnly="True" Width="100" FontSize="12"/>
+                <DataGridTextColumn Header="Actual player count" Binding="{Binding ActualPeak}" IsReadOnly="True" Width="140" FontSize="12"/>
+                <DataGridTextColumn Header="Change (last check)" Binding="{Binding PlayerChange, StringFormat={}{0:N2}%}" IsReadOnly="True" Width="120" FontSize="12"/>
+            </DataGrid.Columns>
+
+
+        </DataGrid>
+        <Label x:Name="LabelHeader" Content="TOP 10 MOST POPULAR GAMES ON STEAM" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Foreground="#64ADFE" Height="34" Width="481" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="TextBoxFilter" HorizontalAlignment="Left" Margin="47,76,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextBoxFilter_TextChanged" Background="#20242C" Foreground="White" Height="18"/>
+    </Grid>
+    <Window.Resources>
+        <Style TargetType="DataGridCell">
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Background" Value="#20242C"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="10"/>
+            <Setter Property="BorderBrush" Value="white"/>
+        </Style>
+    </Window.Resources>
+
+</Window>

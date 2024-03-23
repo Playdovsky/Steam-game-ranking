@@ -1,0 +1,82 @@
+<games>
+  <game>
+    <appID>730</appID>
+    <title>Counter-Strike 2</title>
+    <allTimePeak>1802853</allTimePeak>
+    <last30Peak>1248217</last30Peak>
+    <last24hPeak>1255172</last24hPeak>
+    <link>https://store.steampowered.com/app/730/CounterStrike_2/</link>
+  </game>
+  <game>
+    <appID>578080</appID>
+    <title>PUBG: BATTLEGROUNDS</title>
+    <allTimePeak>3257248</allTimePeak>
+    <last30Peak>623852</last30Peak>
+    <last24hPeak>615879</last24hPeak>
+    <link>https://store.steampowered.com/app/578080/PUBG_BATTLEGROUNDS/</link>
+  </game>
+  <game>
+    <appID>1203220</appID>
+    <title>NARAKA: BLADEPOINT</title>
+    <allTimePeak>295419</allTimePeak>
+    <last30Peak>286647</last30Peak>
+    <last24hPeak>261921</last24hPeak>
+    <link>https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/</link>
+  </game>
+  <game>
+    <appID>1172470</appID>
+    <title>Apex Legends</title>
+    <allTimePeak>624473</allTimePeak>
+    <last30Peak>348791</last30Peak>
+    <last24hPeak>323156</last24hPeak>
+    <link>https://store.steampowered.com/app/1172470/Apex_Legends/</link>
+  </game>
+  <game>
+    <appID>271590</appID>
+    <title>Grand Theft Auto V</title>
+    <allTimePeak>364548</allTimePeak>
+    <last30Peak>295651</last30Peak>
+    <last24hPeak>250591</last24hPeak>
+    <link>https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/</link>
+  </game>
+  <game>
+    <appID>570</appID>
+    <title>Dota 2</title>
+    <allTimePeak>1295114</allTimePeak>
+    <last30Peak>802728</last30Peak>
+    <last24hPeak>720539</last24hPeak>
+    <link>https://store.steampowered.com/app/570/Dota_2/</link>
+  </game>
+  <game>
+    <appID>440</appID>
+    <title>Team Fortress 2</title>
+    <allTimePeak>253997</allTimePeak>
+    <last30Peak>215509</last30Peak>
+    <last24hPeak>211963</last24hPeak>
+    <link>https://store.steampowered.com/app/440/Team_Fortress_2/</link>
+  </game>
+  <game>
+    <appID>1086940</appID>
+    <title>Baldur's Gate 3</title>
+    <allTimePeak>875343</allTimePeak>
+    <last30Peak>202546</last30Peak>
+    <last24hPeak>221982</last24hPeak>
+    <link>https://store.steampowered.com/app/1086940/Baldurs_Gate_3/</link>
+  </game>
+  <game>
+    <appID>1966720</appID>
+    <title>Lethal Company</title>
+    <allTimePeak>240817</allTimePeak>
+    <last30Peak>239369</last30Peak>
+    <last24hPeak>175917</last24hPeak>
+    <link>https://store.steampowered.com/app/1966720/Lethal_Company/</link>
+  </game>
+  <game>
+    <appID>582010</appID>
+    <title>Monseter Hunter: World</title>
+    <allTimePeak>329333</allTimePeak>
+    <last30Peak>119602</last30Peak>
+    <last24hPeak>131557</last24hPeak>
+    <link>https://store.steampowered.com/app/582010/Monster_Hunter_World/</link>
+  </game>
+</games>

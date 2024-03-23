@@ -1,0 +1,32 @@
+﻿<Window x:Class="Game_Ranking.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:oxy="http://oxyplot.org/wpf"
+        mc:Ignorable="d"
+        xmlns:local="clr-namespace:Game_Ranking"
+        Background="#161920"
+        Foreground="#A3CF06"
+        Title="Game Details" Height="373" Width="800" ResizeMode="NoResize" WindowStyle="ToolWindow">
+    <Grid Height="363" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition  Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="LabelGameHeader" Content="Title" HorizontalAlignment="Left" Margin="6,209,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" MouseLeftButtonDown="LabelGameHeader_MouseLeftButtonDown" Foreground="#64ADFE" Width="225" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Height="34" RenderTransformOrigin="0.367,1.533"/>
+        <Label x:Name="LabelAppId" Content="Id Gry" Margin="22,241,0,0" VerticalAlignment="Top" FontSize="12" FontWeight="Bold" Foreground="white" HorizontalAlignment="Left" Width="193" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Height="34"/>
+        <Label x:Name="LabelHeader2" Content="All Time Peak" HorizontalAlignment="Left" Margin="651,182,0,0" VerticalAlignment="Top" FontSize="15" FontWeight="Bold"  Foreground="#64ADFE" Height="34" Width="121" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label x:Name="LabelAllTimePeak" Content="Peak All Time" HorizontalAlignment="Left" Margin="646,205,0,0" VerticalAlignment="Top" FontSize="15" FontWeight="Bold" Foreground="White" Height="39" Width="126" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label x:Name="LabelHeaderPeak" Content="Peak 24h" HorizontalAlignment="Left" Margin="646,84,0,0" VerticalAlignment="Top" FontSize="15" FontWeight="Bold"  Foreground="#64ADFE" Height="34" Width="122" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="LabelHeaderaActualy" Content="Actual Players" HorizontalAlignment="Left" Margin="647,38,0,0" VerticalAlignment="Top" FontSize="15" FontWeight="Bold"  Foreground="#64ADFE" Height="34" Width="124" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="LabelMPeak" Content="Month Peak" HorizontalAlignment="Left" Margin="646,133,0,0" VerticalAlignment="Top" FontSize="15" FontWeight="Bold"  Foreground="#64ADFE" Height="34" Width="124" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="LabelDailyPeak" Content="Peak 24h" HorizontalAlignment="Left" Margin="644,110,0,0" VerticalAlignment="Top" FontSize="15" FontWeight="Bold" Foreground="#FFF" Width="126" Grid.Column="1" Height="34" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="LabelPeakMonth" Content="Month Peak" HorizontalAlignment="Left" Margin="646,156,0,0" VerticalAlignment="Top" FontSize="15" FontWeight="Bold" Foreground="#FFF" Width="126" Grid.Column="1" Height="34" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="LabelActualPlayerCount" Content="Actual Players" HorizontalAlignment="Left" Margin="644,61,0,0" VerticalAlignment="Top" FontSize="15" FontWeight="Bold" Foreground="#FFF" Width="134" Grid.Column="1" Height="34" RenderTransformOrigin="0.436,0.957" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Border BorderBrush="#A3CF06" BorderThickness="7" Width="193" Height="128" CornerRadius="10" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,77,0,0" Grid.ColumnSpan="2">
+            <Image x:Name="LabelMiniatura" Stretch="Fill" Height="113" VerticalAlignment="Top" Margin="0,0,0,0" HorizontalAlignment="Right" Width="181"/>
+        </Border>
+        <oxy:PlotView x:Name="plotView" Grid.ColumnSpan="2" Margin="233,26,137,0"  Background="#20242C" RenderTransformOrigin="0.483,0.47" Height="283" VerticalAlignment="Top" />
+    </Grid>
+</Window>
